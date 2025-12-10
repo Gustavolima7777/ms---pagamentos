@@ -1,5 +1,13 @@
-### GET request to example server
-GET https://examples.http-client.intellij.net/get
-    ?generated-in=IntelliJ IDEA
+### Criar pagamento via PIX
+POST http://localhost:8082/pagamentos
+Content-Type: application/json
 
-###
+{
+  "pedidoId": 1,
+  "valor": 50.0,
+  "tipoPagamento": "PIX",
+  "detalhes": "Pagamento do pedido 1 via PIX"
+}
+
+### Listar todos os pagamentos
+GET http://localhost:8082/pagamentos

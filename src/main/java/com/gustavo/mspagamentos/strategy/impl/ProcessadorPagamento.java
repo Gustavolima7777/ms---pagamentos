@@ -1,4 +1,11 @@
-package com.gustavo.mspagamentos.strategy.impl;
+package com.gustavo.mspagamentos.strategy;
 
-public class ProcessadorPagamento {
+import com.gustavo.mspagamentos.model.Pagamento;
+import com.gustavo.mspagamentos.model.TipoPagamento;
+
+public interface ProcessadorPagamento {
+
+    TipoPagamento tipo();
+
+    Pagamento processar(Pagamento pagamento);
 }

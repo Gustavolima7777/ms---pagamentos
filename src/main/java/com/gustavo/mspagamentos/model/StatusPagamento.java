@@ -1,4 +1,8 @@
 package com.gustavo.mspagamentos.model;
 
-public class StatusPagamento {
+public enum StatusPagamento {
+    PENDENTE,
+    APROVADO,
+    RECUSADO
 }
+
